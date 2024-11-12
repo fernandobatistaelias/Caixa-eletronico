@@ -1,4 +1,3 @@
-# Caixa-eletronico
 deposito = 0
 saque = 0
 saldo = 0
@@ -11,7 +10,7 @@ while condicao == "sim":
             print(f'Saldo insufiente valor do saque é R${saque:.2f} seu saldo e R${saldo:.2f}') 
             condicao = input("Deseja Fazer outra operação?\n")
             if condicao == "sim":
-               print('posso ajudar? ')
+               continue
             else:
               print('Ate mais')
               break
@@ -20,7 +19,7 @@ while condicao == "sim":
             print(f'Valor do saque e R${saque:.2f} seu saldo é R${saldo:.2f}') 
             condicao = input("Deseja Fazer outra operação?\n")
             if condicao == "sim":
-               print('posso ajudar? ')
+              continue
             else:
               print('Ate mais')    
               break    
@@ -30,7 +29,7 @@ while condicao == "sim":
          print(f'O valor do deposito foi R${valor_deposito:.2f} seu saldo atual é {saldo:.2f}')
          condicao = input("Deseja Fazer outra operação?\n") 
          if condicao == "sim":
-              print('posso ajudar? ')
+             continue
          else:
               print('Ate mais')    
               break  
@@ -38,5 +37,3 @@ while condicao == "sim":
             print(f'Seu Saldo é R${saldo:.2f}')
             condicao = input("Deseja Fazer outra operação? \n") 
 print(f'Obrigado e volte sempre!!!"')        
-
-
